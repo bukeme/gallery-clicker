@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+body {
+    display: flex;
+    cursor: pointer;
+}
+
+.all-imgs {
+    display: flex;
+    flex-direction: column;
+    width: 20vww;
+    height: 100vh;
+}
+
+.all-imgs img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.preview-img {
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.preview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animate-img {
+    opacity: 0.5;
+    animation: animate-imgs 0.4s ease-in-out forwards;
+}
+
+@keyframes animate-imgs {
+    100% {
+        opacity: 1;
+    }
+}
